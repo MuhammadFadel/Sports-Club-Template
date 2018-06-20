@@ -1,0 +1,884 @@
+﻿/* this is for general */
+*{
+		margin:0;
+		padding: 0;
+		font-family: "arial", "cambria", "Time New Roman";
+		text-decoration:none;
+}
+
+@font-face {
+	   	font-family: GOTHIC;
+	   	src: url(GOTHIC.ttf);
+}
+
+@font-face {
+	   	font-family: GOTHICB;
+	   	src: url(GOTHICB.ttf);
+}
+
+.clear{
+	clear: both;
+		*zoom: 1;
+}
+.clearleft{
+	clear: left;
+}
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+	 
+.clear:after {
+	clear: both;
+}
+
+.line {
+		background: transparent url(../images/line.png) repeat-x;
+		height: 2px;
+		padding: 20px 0 0 0;
+		line-break: 0px;
+		margin-top:-30px;
+}
+
+.linee {
+		background: transparent url(../images/line.png) repeat-x;
+		height: 2px;
+		padding: 20px 0 0 0;
+		line-break: 0px;
+		
+}
+
+.margin{
+	
+	margin: 0 auto ;
+	margin-top: 2%;
+}
+
+.hide {
+    display: none;
+}
+
+body{
+		width: 100%;
+		min-width: 1250px;
+	max-width: 1250px;
+		margin: 0 auto;
+		max-height: 100%;
+	   	max-width: 100%;
+	   	min-width: 800px;
+	   	background: rgba(31, 31, 31, 0.2); /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient( right, rgba(111, 13, 6, 0.6), rgba(31, 31, 31, 0.1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right , rgba(111, 13, 6, 0.6), rgba(31, 31, 31, 0.1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right , rgba(111, 13, 6, 0.6), rgba(31, 31, 31, 0.1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right , rgba(111, 13, 6, 0.6), rgba(31, 31, 31, 0.1)); /* Standard syntax (must be last) */
+	  ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}	
+
+}
+
+/*********************************************************/
+
+
+/* this is for header and that containt */
+div.about{
+			
+			width: 100%;
+			min-width: 900px;
+			max-height: 150px;
+			background-color: #dedede;
+			background-image:url("../images/flywheel.jpg")  ;
+			background-repeat:no-repeat;
+			background-position:fixed;
+			top:0;
+			height:auto;
+			-webkit-background-size: cover;
+		  	  -moz-background-size: cover;
+		    	-o-background-size: cover;
+		   	background-size: cover;
+			
+			text-align: center;
+}
+
+header.stander{
+		min-width: 70%;
+		width: 70%;
+		margin:0 auto;
+		padding: 10px;
+		text-align: center;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	    -o-border-radius: 5px;
+}
+
+header.stander span a img{
+		margin-top:-10px;
+		position: relative;
+		width:auto;
+		max-width: 200px;
+		height: auto;
+		float: left;
+
+}
+
+header.stander nav{
+		
+		margin: 0 auto;
+		
+}
+
+header.stander nav ul.header{
+		margin: 0 auto;
+		margin: 10px;
+		text-align: center;
+		list-style-type:none;
+		
+
+}
+header.stander nav ul.header li{
+		display: inline-block;
+		padding: 0;
+		margin: 5px;
+		margin-left: 40px;
+		text-align: center;
+
+}
+header.stander nav ul.header li ul li {
+		margin: 15px;
+		margin-bottom: 5px;
+		display: inline-block;
+
+		}
+
+		header.stander nav ul.header li ul li a{
+			text-transform: capitalize;
+		}
+
+		header.stander nav ul.header li ul li a:hover{
+			text-transform: uppercase;
+
+		}
+
+
+
+header.stander nav ul li a{
+		text-decoration: none;
+		font-family: "GOTHICB", "cambria", "arial", "Time New Roman" ;
+		font-weight: 900;
+		text-transform:uppercase;
+		color:#f2f2f2;
+		display: block;
+		height: 25px;
+		text-align: center;
+		vertical-align: middle;
+		padding:15px;
+
+}
+
+header.stander nav ul li a.active{
+		font-weight: 900px;
+		letter-spacing: 3px;
+		background:rgba(111, 13, 6, 0.59);
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	    -o-border-radius: 5px;
+
+}
+
+
+header.stander nav ul li a:hover:not(.active){
+		background:rgba(111, 13, 6, 1);
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	    -o-border-radius: 5px;
+}
+/**********************************************************/
+
+/* this for making the bottom of sports page */
+
+/* Style The Dropdown Button */
+.dropbtn {
+	    
+	    color: rgba(111, 13, 6, 0.94);
+	    display: block;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+
+	    -webkit-transition: height 0.3s ease-in;
+	            -moz-transition: height 0.3s ease-in;
+	            -o-transition: height 0.3s ease-in;
+	            -ms-transition: height 0.3s ease-in;
+	            transition: height 0.3s ease-in;
+}
+
+	/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	    position: relative;
+
+		
+	    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+
+		-webkit-transition: opacity 1s, height 1s, ease;
+	       -moz-transition: opacity 1s, height 1s, ease;
+	        -ms-transition: opacity 1s, height 1s, ease;
+	         -o-transition: opacity 1s, height 1s, ease;
+	            transition: opacity 1s, height 1s, ease;
+		overflow:hidden;
+		height: 0;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	    -o-border-radius: 5px;
+	     opacity: 0;
+	    margin-left:-120%;
+	    position:absolute;
+	    background-color: rgba(31, 31, 31, 0.63);
+	    visibility: hidden;
+	    margin-top: auto;
+		width: 450px;
+		min-height: auto;
+	    
+}
+
+	 
+/* Links inside the dropdown */
+.dropdown-content a {
+	color:#eee;
+	text-align: center;
+	vertical-align: middle;
+	padding: 12px 16px;
+	text-decoration: none;
+	display:block;
+	white-space: nowrap;
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: rgba(31, 31, 31, 0.63);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	position: absolute;
+	
+	height:auto;
+	opacity: 1;
+	z-index: 2;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: (111, 13, 6, 0.54);
+}
+
+	
+/********************************************************/
+
+
+
+/* this is the style of about page */
+
+
+
+/* this is all of the style of left side */
+.left{
+		
+	position: relative;
+	overflow: auto;
+	width: 15%;
+	float: left;
+	text-align: center;	
+	background-color:rgba(111, 13, 6, 0.94);
+	padding: 20px;
+	height: 1000px;
+	min-height: auto;
+	z-index: 2;
+	padding-bottom:-20px;
+	min-height: auto;
+	max-height: auto;
+	background: rgba(111, 13, 6, 0.94); /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient( top, rgba(111, 13, 6, 0.94), rgba(111, 13, 6, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom , rgba(111, 13, 6, 0.94), rgba(111, 13, 6, 0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom , rgba(111, 13, 6, 0.94), rgba(111, 13, 6, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom , rgba(111, 13, 6, 0.94), rgba(111, 13, 6, 0)); /* Standard syntax (must be last) */
+    border-radius: 0 0 10px 0;
+    -webkit-border-radius: 0 0 10px 0;
+	-o-border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;
+
+}
+
+
+div.leftside{
+	margin:0 auto;
+	
+}
+
+div.leftside span{
+	margin:0 auto;
+	width: 100px;
+	height:auto;
+	padding: 10px;
+}
+
+div.leftside span a{
+	margin:0 auto;
+	height: auto;
+	display: block;
+	width: 80px;
+}
+
+div.leftside span a.si{
+	width: auto;
+	margin-bottom: 10px;
+	font-weight: 900;
+	font-family: "GOTHICB", arial, "times new roman";
+	font-size: 20px;
+	color: rgba(31, 31, 31, 1);
+	text-decoration: underline;
+	transition:all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
+
+div.leftside span a.si:hover{
+	color:#f2f2f2;
+	text-decoration: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color:rgba(31, 31, 31, 0.63);
+	padding: 5px;
+	text-transform: capitalize;
+}
+.act{
+	color:#f2f2f2;
+	text-decoration: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color:rgba(31, 31, 31, 0.63);
+	padding: 5px;
+	text-transform: capitalize;
+}
+
+
+div.leftside span a img{
+	margin: 0 auto;
+	width:80px; 
+	height:auto;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+}
+
+/***********************************************************/
+
+.right{
+	margin-left:2%;
+	width: 75%;
+	min-width: 75%;
+	float: left;
+	height:100%;
+	min-height: auto;
+	overflow: auto;
+}
+
+.right h1,h2 {
+	font-weight:900;
+	font-family: "GOTHICB", arial, "times new roman";
+	text-transform: uppercase;
+	padding:20px;
+	padding-left: 0;
+}
+
+.right p{
+	padding-bottom:10px; 
+	text-indent: 0.5cm;
+	font-weight:600;
+	font-family: "GOTHIC", arial, "times new roman";
+}
+
+
+.rightright{
+	
+	position: relative;
+	margin-left: 10px;
+	width: 90%;
+	text-align: center;
+	margin-top: 20px;
+	z-index:1;
+}
+
+.rightright  img{
+	width: 90%;
+	height: 500px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	min-width: 95%;
+	transition: all 1s ease; 
+	
+}
+
+.rightright  img:hover{
+	border: 1px solid rgba(197, 196, 227, 0.52);
+}
+
+.rightright figcaption{
+	font-family: "GOTHIC", arial;
+	font-size: 10px;
+}
+
+.rightsportspagesdiv{
+	min-width: 75%;
+}
+.rightsportspagesdiv p{
+	float: left;
+	position: relative;
+	width: 65%;
+	
+}
+
+.rightsportspagesdiv table{
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid rgba(31, 31, 31, 0.63);
+	background-color:rgba(111, 13, 6, 0.59);
+}
+
+.rightsportspagesdiv table th{
+	border: 1px solid rgba(31, 31, 31, 0.63);
+	font-family: "GOTHICB",arial, "times new roman";
+}
+
+
+.rightsportspagesdiv table tr {
+	padding: 5px;
+	border: 1px solid rgba(31, 31, 31, 0.63);
+	font-family: "GOTHIC",arial, "times new roman";
+}
+
+.rightsportspagesdiv table tr td{
+	padding: 5px;
+	border: 1px solid rgba(31, 31, 31, 0.63);
+	font-family: "GOTHIC",arial, "times new roman";
+}
+
+.rightsportspagesfig{
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	width: 30%;
+	text-align: center;
+	z-index:1;
+	border: 1px solid rgba(197, 196, 227, 0.52);
+
+
+}
+
+.rightsportspagesfiga{
+	margin: 20px;
+
+}
+
+
+.rightsportspagesfigm{
+	
+	margin-bottom: 80px;
+	
+}
+
+.rightsportspagesfig  img{
+	width: 30%;
+	height: 150px;
+	cursor: pointer;
+	min-width: 95%;
+	transition: all 1s ease; 
+
+	
+}
+
+.rightsportspagesfig figcaption{
+	font-family: "GOTHIC", arial;
+	font-size: 15px;
+}
+
+
+/***********************************************************/
+/* this the style of left side in contact page */
+.widthcontact{
+	min-width:1000px;
+
+}
+
+div.containofcontact{
+	margin: 0 auto;
+	
+}
+
+div.containofcontact h2{
+	font-family: "GOTHICB", arial, "times new roman";
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	text-align: center;
+	text-shadow: 4px 4px 4px rgba(31, 31, 31, 0.63) ;
+
+}
+
+
+div.contactform{
+	float:left;
+	width: 35%;
+	margin-left: 2%;
+	padding: 5px;	
+	border:0;
+}
+
+div.contactform section fieldset{
+	padding: 10px;
+	background-color: rgba(31, 31, 31, 0.53);
+	border:0;
+	border-radius: 5px;
+}
+
+div.contactform section fieldset legend{
+	padding-bottom : 5px;
+	font-size: 1em;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 3px;
+}
+
+div.contactform form label{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 300;
+	font-family: "GOTHIC", arial, "times new roman";
+	padding-bottom: 5px;
+
+	
+}
+
+div.contactform form input.wid{
+	width: 85%;
+	padding: 5px;
+	
+	display: block;
+	overflow: auto;
+	border:0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.wid{
+	width: 85%;
+	max-width: 85%;
+	padding: 5px;
+	border:0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	resize: none;
+
+
+}
+
+div.followus {
+	padding-top: 5px; 
+	width: 55%;
+	float: left;
+	margin-right:20px;
+	margin-left: 5%;
+}
+
+div.followus a{
+	text-decoration: none;
+	color:rgba(11, 10, 10, 0.96);
+	font-style: italic;
+
+}
+
+div.followus section{
+margin:0 auto;
+margin-top: 20px;
+text-align: center;
+width: 70%;
+
+}
+
+
+div.followus section span a img{
+	width: 50px;
+	height: auto;
+	margin-left: 50px;
+	transition: all 0.8 ease;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	}
+div.followus section span a img:hover{
+		background-color: #000;
+		border-radius: 5px;	
+
+}
+
+
+.submitbottom{
+	cursor: pointer;
+	width: 150px;
+    height: 35px;
+    font-family: "GOTHIC", arial, "times new roman";
+    letter-spacing: 1px;
+    background-color: rgba(31, 31, 31, 0.63);
+    border-radius: 3px;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0px;
+	margin-top: 5px;
+	transition: height 0.5s ease-in, background-color 0.5s ease-in ;
+	-webkit-transition: color 0.5s ease-in, background-color 0.5s ease-in ;
+		-o-transition: height 0.5s ease-in, background-color 0.5s ease-in ;
+		-moz-transition: height 0.5s ease-in, background-color 0.5s ease-in ;
+}
+
+.submitbottom:hover{
+	color:#f2f2f2;
+	background-color:rgba(111, 13, 6, 0.94);
+
+	
+}
+
+
+.coninfo{
+	font-family: "GOTHICB", arial, "times new roman";
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.coninfoo{
+	font-family: "GOTHIC", arial, "times new roman";
+	font-weight: 400;
+
+}
+
+/*******************************************************/
+
+/* this is the right side in contact.html page */
+
+
+
+/*******************************************************/
+
+
+
+
+/* this the footer style */
+
+footer{
+		width: 100%;
+		background:rgba(111, 13, 6, 0.74);
+		text-align: center;
+		position:fixed;
+		bottom:0;
+
+
+}
+
+footer p{
+		font-family:"GOTHIC", arial, "times new roman";
+		width: 100%;
+}
+
+footer span{
+		text-transform: uppercase;
+		font-weight: 600;
+		font-family:"GOTHIC", arial, "times new roman"; 
+}
+
+footer.confot{
+	width: 100%;
+	position: relative;
+	bottom:0;
+	margin:0;
+	z-index: 3;
+	overflow: hidden;
+	height: auto;
+
+}
+
+/*
+footer.aasp{
+	width:85%;
+	margin-left: 17.9%;
+
+}
+*/
+
+/******************************************************/
+
+
+/* this is the style of sports page */
+
+
+.rightt{
+	margin-left:2%;
+	width: 80%;
+	min-width: 80%;
+	height:100%;
+	min-height: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+
+
+.rightsport{
+	margin-left: 10px;
+	text-align: center;
+	margin-top: 20px;
+	z-index:1;
+	box-sizing: border-box;
+	min-width: 20%;
+	padding-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	width: 250px;
+}
+
+.rightsport a{
+	position: relative;
+
+
+}
+	
+.rightsport a img{
+	width: auto;
+	min-width: 250px;
+	max-width: 250px;
+	height:auto;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	transition: all 1s ease; 
+	position: relative;
+	
+}
+
+.rightsport a img:hover{
+	border: 1px solid rgba(197, 196, 227, 0.52);
+	
+}
+.rightsport figure {
+	position: relative;
+	min-width: 250px;
+
+}
+
+.rightsport figcaption{
+	font-family: "GOTHIC", arial;
+	font-size: 10px;
+}
+
+
+
+/******************************************************/
+
+
+
+/* this is for show the image in all screen */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*************************************************************/

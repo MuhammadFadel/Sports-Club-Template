@@ -1,0 +1,646 @@
+/* this is for general */
+*{
+	margin:0;
+	padding: 0;
+	font-family: "arial", "cambria", "Time New Roman";
+	text-decoration:none;
+
+}
+
+@font-face {
+   	font-family: GOTHIC;
+   	src: url(GOTHIC.ttf);
+	}
+
+@font-face {
+   	font-family: GOTHICB;
+   	src: url(GOTHICB.ttf);
+	}
+
+.clear{
+	clear: both;
+	*zoom: 1;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+   clear: both;
+}
+
+.line {
+	background: transparent url(../images/line.png) repeat-x;
+	height: 2px;
+	padding: 20px 0 0 0;
+	line-break: 0px;
+	margin-top:-20px;
+}
+
+.linee {
+	background: transparent url(../images/line.png) repeat-x;
+	height: 2px;
+	padding: 20px 0 0 0;
+	line-break: 0px;
+	
+}
+
+ 
+/********************************************************/
+
+/* this is the body style */
+
+body{
+	width: 100%;
+	min-width: 1250px;
+	padding: 0;
+	margin: 0 auto;
+	background-image: url("bg2.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+    -o-background-size: cover;
+   	background-size: cover;
+    max-width: 100%;
+    position: relative;
+   
+}
+/********************************************************/
+ 
+/* this is for header and that containt */
+header{
+	
+	min-width: 900px;
+	max-height: 150px;
+	width: 70%;
+	height:auto;
+	margin:0 auto ;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header>nav>span{
+	width: 100px;
+	margin-top: 2%;
+}
+header>nav>span>a{
+	width: 80px;
+	margin-top: 2%;
+}
+header>nav>span>a>img{
+	width: 80px;
+	margin-top: 20px;
+}
+
+header span a img{
+	margin-top:-10px;
+	position: relative;
+	width:auto;
+	max-width: 200px;
+	height: auto;
+	float: left;
+
+}
+
+
+header nav{
+
+	height:auto;
+	
+	
+}
+
+header nav ul{
+	
+	padding: 15px;
+	margin: 10px;
+	float: right;
+	text-align: center;
+	list-style-type:none;
+	
+
+}
+header nav ul li{
+	float:left;
+	padding: 0;
+	
+	margin: 5px;
+	text-align: center;
+
+}
+
+header nav ul li ul li {
+		float:none;
+		margin: 15px;
+		margin-bottom: 5px;
+		display: inline-block;
+
+		}
+
+		header nav ul li ul li a{
+			text-transform: capitalize;
+			text-align: center;
+		}
+
+		header nav ul li ul li a:hover{
+			text-transform: uppercase;
+
+		}
+
+
+header nav ul li a{
+	text-decoration: none;
+	font-family: "GOTHICB", "cambria", "arial", "Time New Roman" ;
+	font-weight: 900;
+	text-transform:uppercase;
+	color:#f2f2f2;
+	display: block;
+	height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	padding:15px;
+}
+
+header nav ul li a.active{
+	font-weight: 900px;
+	letter-spacing: 3px;
+	background:rgba(111, 13, 6, 0.59);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+
+
+header nav ul li a:hover:not(.active){
+	background:rgba(111, 13, 6, 1);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/********************************************************/	
+
+/* this for making the bottom of sports page */
+
+/* Style The Dropdown Button */
+/* Style The Dropdown Button */
+.dropbtn {
+	    
+	    color: rgba(111, 13, 6, 0.94);
+	    display: block;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+
+	    -webkit-transition: height 0.3s ease-in;
+	            -moz-transition: height 0.3s ease-in;
+	            -o-transition: height 0.3s ease-in;
+	            -ms-transition: height 0.3s ease-in;
+	            transition: height 0.3s ease-in;
+}
+
+	/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	    position: relative;
+
+		
+	    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+
+		-webkit-transition: opacity 1s, height 1s, ease;
+	       -moz-transition: opacity 1s, height 1s, ease;
+	        -ms-transition: opacity 1s, height 1s, ease;
+	         -o-transition: opacity 1s, height 1s, ease;
+	            transition: opacity 1s, height 1s, ease;
+		overflow:hidden;
+		height: 0;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	  	-moz-border-radius: 5px;
+	    -o-border-radius: 5px;
+	     opacity: 0;
+	    margin-left:-180px;
+	    position:absolute;
+	    background-color: rgba(31, 31, 31, 0.63);
+	    visibility: hidden;
+	    margin-top: auto;
+		min-height: auto;
+		width: 450px;
+}
+
+	 
+/* Links inside the dropdown */
+.dropdown-content a {
+	color:#eee;
+	text-align: center;
+	vertical-align: middle;
+	padding: 12px 16px;
+	text-decoration: none;
+	display:block;
+	white-space: nowrap;
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: rgba(31, 31, 31, 0.63);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	position: absolute;
+	
+	height:auto;
+	opacity: 1;
+	z-index: 2;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: (111, 13, 6, 0.54);
+}
+
+/*********************************************/
+
+/* the style of the article of the home page */
+
+div.arth{
+	margin-top:3%;
+	background:rgba(111, 13, 6, 0.94);
+	border:1px 1px 1px solid rgba(111, 13, 6, 0.54);
+	width: 50%;
+	height: auto;
+	min-width: 500px;
+	animation: moving 1.5s 1 ease-out;
+
+}
+
+div.arthome{
+	padding: 15px;
+	margin: 0  ;
+	width:80%;
+	margin-left: 10%;
+
+}
+
+
+div.arthome h3{
+	font-family: "GOTHICB", arial, "times new roman";
+	font-weight: 700;
+	font-size: 1.5em;
+	color:#fde8f5;
+	letter-spacing: 5px;
+}
+
+
+div.arthome section p{
+	color:#eee;
+	text-indent: .7cm;
+	font-size:1.2em;
+	font-family: "GOTHIC", arial, "times new roman"; 
+
+}
+
+/* this is the style of bouttom that in home page */
+.button {
+
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgba(31, 31, 31, 0.63);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px; padding: 10px; width: 300px;height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+.button span>a{	
+		text-decoration:none; 
+		color:#f2f2f2;
+		font-size:1.2em;
+		font-family:"GOTHIC", "Comic Sans MS", "Tekton Proo", "Calibri" , sans-serif;
+		font-weight:500;
+		display: block;
+		}
+
+.button span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;}
+.button span:after {
+		vertical-align:middle;
+		content: '   »';
+		position: absolute;
+		opacity: 0;
+		top: 6px;
+		right: -20px;transition: 0.5s;}
+.button:hover span {padding-right: 25px;}
+.button:hover span:after {opacity: 1;right: 0;}
+
+/********************************************************/
+
+
+/* this the footer style */
+
+footer{
+	width: 100%;
+	background:rgba(111, 13, 6, 0.74);
+	text-align: center;
+	position:fixed;
+	bottom:0;
+
+}
+
+footer p{
+	font-family:"GOTHIC", arial, "times new roman";
+}
+
+footer span{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family:"GOTHIC", arial, "times new roman"; 
+}
+
+/********************************************************/
+
+
+/* this the all style for Home page we won't another thing here */
+
+
+/********************************************************/
+
+/* this is for animation for div which have the main pragraphe */
+
+@keyframes moving{
+	from{
+		position: absolute;
+		left: 500px;
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		position: absolute;
+		left: 0;
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.94;
+	}
+} 
+
+@-webkit-keyframes moving{
+	from{
+		position: absolute;
+		left: 500px;
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		position: absolute;
+		left: 0;
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.94;
+	}
+} 
+
+
+@-moz-keyframes moving{
+	from{
+		position: absolute;
+		left: 500px;
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		position: absolute;
+		left: 0;
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.94;
+	}
+} 
+@-o-keyframes moving{
+	from{
+		position: absolute;
+		left: 500px;
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		position: absolute;
+		left: 0;
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.94;
+	}
+} 
+
+/************************************************************/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+
+		body{
+			width: 100%;
+			max-width: 480px;
+			min-width: 395px;
+			height: 100%;
+			min-height: 600px;
+			background-image: url("bg3.jpg");
+			background-size:cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;   	
+		}
+
+		header{
+			width: 100%;
+			min-width: 200px;
+			margin: 0 auto;
+			margin-top: 15%;
+			padding: 0;
+			height: 100px;
+			display: block;
+			position:relative;
+		}
+		header nav{
+			width:70%;
+			min-width: 200px;
+			margin: 0 auto;
+
+
+		}
+		header nav ul{
+			width: 100%;
+			padding: 0;
+			margin: 0 auto;
+			float: none;
+			
+		}
+		header nav ul li{
+			float: left;
+			display: block;
+			font-size: 10px;
+			margin: 0 auto;
+			padding: 0;
+
+		}
+		header nav ul li a{
+			padding: 5px;
+			margin: 5px;
+			height: auto;
+		}
+		header nav ul li a.active{
+			border-radius: 2.5px;
+			-webkit-border-radius: 2.5px;
+		  	-moz-border-radius: 2.5px;
+		    -o-border-radius: 2.5px;
+		}
+
+		.dropbtn{
+			font-size: 10px;
+		}
+		nav>span{
+			display: none;
+		}
+
+		.button{
+			width:auto;
+			font-size: 10px;
+		}
+
+		.arth{
+			margin: 0 auto;
+			height: 300px;
+			margin-top: 40%;
+			min-width: 100px;
+			opacity: 0.85;
+		}
+		div.arth{
+			min-width: 100px;
+			width: 65%;
+			margin-top: -2%;
+
+		}
+		.arthome{
+			padding: 0;
+			margin-left: 0;
+
+		}
+		div.arthome{
+			margin-left: 4%;
+		}
+		div.arthome h3{
+			font-family: "GOTHICB", arial, "times new roman";
+			font-weight: bold;
+			font-size:15px;
+			color:#fde8f5;
+			letter-spacing: 5px;
+			margin-bottom: 10px
+			margin-left:0;
+			padding: 0; 
+		}
+		.arthome section{
+			font-size: 7px;
+			width: auto;
+			margin: 0;
+			padding: 0;
+		}
+		.line{
+			display: none;
+		}
+		.linee{
+			display: none;
+		}
+		article{
+			
+		}
+
+		header nav ul li ul{
+			display: none;
+		}
+
+		/* this is for animation for div which have the main pragraphe */
+
+@keyframes moving{
+	from{
+		
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+		
+		
+	}
+
+	to{
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.85;
+		
+	}
+} 
+
+@-webkit-keyframes moving{
+	from{
+		
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.85;
+	}
+} 
+
+
+@-moz-keyframes moving{
+	from{
+		
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.85;
+	}
+} 
+@-o-keyframes moving{
+	from{
+		
+		background:rgba(220, 4, 4, 0.93);
+		opacity: 0.1;
+	}
+
+	to{
+		
+		background:rgba(111, 13, 6, 0.94);
+		opacity: 0.85;
+	}
+} 
+}
+
+/*************************************************************/
